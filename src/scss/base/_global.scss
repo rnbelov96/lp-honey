@@ -1,0 +1,67 @@
+body {
+  font-family: 'GothamPro';
+  color: $black;
+}
+
+.container {
+  max-width: 1144px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  &_footer {
+    min-height: inherit;
+  }
+
+  &_calc {
+    max-width: 1026px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 0 30px;
+  }
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
+}
+
+.rouble {
+  font-family: 'Rouble';
+  font-weight: 400;
+}
+
+.input-error,
+.input-error:hover {
+  border: solid #ce211f 1px;
+  & + svg {
+    path,
+    rect {
+      fill: #ce211f;
+    }
+  }
+  color: #ce211f;
+
+  &::-webkit-input-placeholder {
+    color: #ce211f;
+  }
+  &::-moz-placeholder {
+    color: #ce211f;
+  }
+  &:-ms-input-placeholder {
+    color: #ce211f;
+  }
+  &:-moz-placeholder {
+    color: #ce211f;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

@@ -1,0 +1,143 @@
+.form {
+  width: 435px;
+  padding: 54px 66px 45px 63px;
+
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0px 26px 109px 0 rgba(131, 65, 0, 0.15);
+
+  &_line {
+    margin: 0 auto;
+
+    width: 100%;
+
+    & .form__input-list {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    & .form__input-box {
+      width: 24%;
+    }
+
+    & .form__input {
+      margin-right: 14px;
+    }
+
+    & .form__title,
+    & .form__text {
+      text-align: center;
+    }
+
+    & .form__policy-text {
+      font-size: 12px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+}
+
+.form__title {
+  margin-bottom: 0;
+
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.form__text {
+  margin-bottom: 0;
+
+  font-size: 18px;
+  line-height: 1.44;
+}
+
+.form__input-list {
+  margin-top: 23px;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.form__input-label {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.form__input {
+  margin-top: 9px;
+  padding: 16px 18px 18px 20px;
+
+  font-size: 18px;
+  line-height: 20px;
+  color: #bb8751;
+
+  background-color: #f4f1ed;
+  border: none;
+
+  &::-webkit-input-placeholder {
+    color: #bb8751;
+    font-size: 18px;
+  }
+  &::-moz-placeholder {
+    color: #bb8751;
+    font-size: 18px;
+  }
+  &:-ms-input-placeholder {
+    color: #bb8751;
+    font-size: 18px;
+  }
+  &:-moz-placeholder {
+    color: #bb8751;
+    font-size: 18px;
+  }
+}
+
+.form__button {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.44;
+  text-align: center;
+  color: $white;
+
+  box-shadow: 0px 3px 0 0 #cc1c3d;
+  border-radius: 5px;
+  border: none;
+  background-image: linear-gradient(to top, #e8232b, #f87ca5);
+
+  &:hover {
+    box-shadow: 0px 3px 0 0 #de3958;
+    background-image: linear-gradient(to top, #f04a5a, #ff99bb);
+  }
+
+  &:active {
+    box-shadow: inset 0px 4px 1px 0 rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #bd0007, #ed3d4e);
+  }
+}
+
+.form__policy-text {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: left;
+  color: #bb8751;
+}

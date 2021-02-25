@@ -1,0 +1,89 @@
+.adv {
+  position: relative;
+
+  min-height: 1052px;
+  padding-top: 104px;
+  padding-bottom: 94px;
+
+  background-image: url('/src/img/sot-1.png'), url('/src/img/sot-2.png');
+  background-position: left 386px, right 159px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.adv__title {
+  margin-bottom: 0;
+
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.adv__subtitle {
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.adv__list {
+  margin-top: 64px;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.adv__item {
+  width: 237px;
+}
+
+.adv__icon {
+  width: 122px;
+  height: 122px;
+
+  background-image: linear-gradient(to top, #b47531, #eca84d);
+  border-radius: 50%;
+
+  &_first {
+    background-image: url("/src/img/icons/adv/icon1.png");
+    background-size: cover;
+  }
+  &_second {
+    background-image: url("/src/img/icons/adv/icon2.png");
+    background-size: cover;
+  }
+  &_third {
+    background-image: url("/src/img/icons/adv/icon3.png");
+    background-size: cover;
+  }
+  &_fourth {
+    background-image: url("/src/img/icons/adv/icon4.png");
+    background-size: cover;
+  }
+}
+
+.adv__item-title {
+  margin-bottom: 0;
+  margin-top: 34px;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.adv__item-text {
+  font-size: 18px;
+  line-height: 1.44;
+  margin-top: 20px;
+}
+
+.adv__bee-img {
+  position: absolute;
+  bottom: 67px;
+  right: 300px;
+}

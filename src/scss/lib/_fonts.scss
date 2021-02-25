@@ -1,0 +1,31 @@
+/* montserrat-regular - latin_cyrillic-ext */
+@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/GothaProReg.otf') format('opentype')
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/GothaProBla.otf') format('opentype')
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/GothaProBol.otf') format('opentype')
+}
+
+@font-face {
+  font-family: 'Rouble';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Rouble.otf') format('opentype');
+}

@@ -1,0 +1,133 @@
+.stats {
+  min-height: 1184px;
+  padding-top: 104px;
+  padding-bottom: 65px;
+
+  @include bg;
+  background-image: url('/src/img/bgs/stats-bg.jpg');
+}
+
+.stats__title {
+  margin-bottom: 0;
+
+  font-size: 40px;
+  font-weight: 900;
+  color: $white;
+  text-align: center;
+}
+
+.stats__text {
+  margin-bottom: 0;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: normal;
+  color: $white;
+  text-align: center;
+}
+
+.stats__content {
+  margin-top: 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.stats__list {
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+
+  list-style: none;
+}
+
+.stats__item {
+  margin-bottom: 45px;
+  width: 266px;
+}
+
+.stats__item-icon {
+  width: 102px;
+  height: 102px;
+
+  background-image: linear-gradient(to top, #b47531, #eca84d);
+  border-radius: 50%;
+
+  &_first {
+    background-image: url('/src/img/icons/stats/icon1.png');
+    background-size: cover;
+  }
+  &_second {
+    background-image: url('/src/img/icons/stats/icon2.png');
+    background-size: cover;
+  }
+  &_third {
+    background-image: url('/src/img/icons/stats/icon3.png');
+    background-size: cover;
+  }
+  &_fourth {
+    background-image: url('/src/img/icons/stats/icon4.png');
+    background-size: cover;
+  }
+  &_fifth {
+    background-image: url('/src/img/icons/stats/icon5.png');
+    background-size: cover;
+  }
+  &_sixth {
+    background-image: url('/src/img/icons/stats/icon6.png');
+    background-size: cover;
+  }
+}
+
+.stats__item-text {
+  margin-bottom: 0;
+  margin-top: 30px;
+
+  font-size: 20px;
+  line-height: 1.5;
+  color: $white;
+
+  span {
+    font-size: 36px;
+    font-weight: 900;
+  }
+}
+
+.stats__ceo-box {
+  width: 512px;
+  min-height: 756px;
+  padding: 41px 32px 39px 42px;
+
+  background-color: $white;
+}
+
+.stats__img-box {
+  width: 100%;
+}
+
+.stats__ceo-img {
+  width: 100%;
+}
+
+.stats__caption {
+  margin-bottom: 0;
+  margin-top: 34px;
+
+  font-size: 18px;
+  line-height: 1.44;
+
+  span {
+    font-size: 24px;
+    font-weight: 900;
+  }
+}
+
+.stats__ceo-text {
+  margin-bottom: 0;
+  margin-top: 40px;
+
+  font-size: 18px;
+  line-height: 1.44;
+}
