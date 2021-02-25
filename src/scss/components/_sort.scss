@@ -1,0 +1,60 @@
+.sort {
+  min-height: 1267px;
+  padding-top: 87px;
+  padding-bottom: 78px;
+
+  @include bg;
+  background-image: url('/src/img/bgs/sort-bg.jpg');
+}
+
+.sort__title {
+  margin-bottom: 0;
+
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.sort__list {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+}
+
+.sort__item {
+  width: 238px;
+  margin-bottom: 15px;
+}
+
+.sort__item-img {
+  width: 100%;
+}
+
+.sort__item-title {
+  margin-bottom: 0;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.sort__item-weight {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.sort__item-text {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 35px;
+}
+
+.sort__item-price {
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 20px;
+}

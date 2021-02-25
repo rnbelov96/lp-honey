@@ -1,0 +1,78 @@
+.shops {
+  min-height: 1039px;
+
+  padding-top: 137px;
+  padding-bottom: 93px;
+
+  background-image: url('/src/img/shop-sot-1.png'),
+    url('/src/img/shop-sot-2.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right 137px;
+}
+
+.shops__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shops__left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 9px;
+
+  div:first-child {
+    position: relative;
+
+    margin-bottom: 9px;
+
+    &::before {
+      position: absolute;
+      left: 0px;
+      bottom: -20px;
+
+      font-size: 18px;
+      font-weight: 900;
+
+      content: 'Магазин №1';
+    }
+  }
+
+  div:last-child {
+    position: relative;
+
+    margin-bottom: 9px;
+
+    &::before {
+      position: absolute;
+      left: -70px;
+      bottom: 42px;
+      transform: rotateZ(270deg);
+
+      font-size: 18px;
+      font-weight: 900;
+
+      content: 'Магазин №2';
+    }
+  }
+}
+
+.shops__right-column {
+  position: relative;
+  top: -34px;
+
+  div {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0px;
+      top: -24px;
+  
+      font-size: 18px;
+      font-weight: 900;
+  
+      content: 'Магазин №3';
+    }
+  }
+}
