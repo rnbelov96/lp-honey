@@ -1,0 +1,58 @@
+.certificates-slider {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 80px;
+}
+
+.certificates-slider__wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.certificates-slider__img-box {
+  display: flex;
+  justify-content: space-between;
+  transform: translate3d(-200%, 0, 0);
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.certificates-slider__img-item {
+  width: 49%;
+  margin: 0% calc(2% / 4);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img,
+  div {
+    pointer-events: none;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.certificates-slider__btn-next,
+.certificates-slider__btn-prev {
+  position: relative;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 3.1px;
+  background-image: linear-gradient(to top, #b47531, #eca84d);
+  border: none;
+}
+
+.certificates-slider__btn-prev {
+  margin-right: 40px;
+}
+
+.certificates-slider__btns {
+  margin-top: 48px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

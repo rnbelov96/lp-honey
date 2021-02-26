@@ -38,8 +38,32 @@
     }
   }
 
+  &_desc {
+    @media (max-width: 1200px) {
+      margin-top: 30px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
   &_sort {
     margin-top: 70px;
+  }
+
+  &_feedback {
+    position: relative;
+    z-index: 1;
+
+    padding-top: 30px;
+
+    &::before {
+      position: absolute;
+      z-index: 2;
+      top: 184px;
+      right: 400px;
+
+      content: url('/src/img/hand.png');
+    }
   }
 }
 
@@ -144,4 +168,9 @@
   line-height: 1.4;
   text-align: left;
   color: #bb8751;
+}
+
+.form__policy {
+  cursor: pointer;
+  text-decoration: underline;
 }

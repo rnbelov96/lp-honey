@@ -1,0 +1,59 @@
+.share {
+  min-height: 1639px;
+  padding-top: 103px;
+  padding-bottom: 91px;
+
+  background-image: url("/src/img/bgs/flowers-bg-1.png"), url("/src/img/bgs/flowers-bg-2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top, left bottom;
+}
+
+.share__title {
+  margin-bottom: 0;
+  text-align: center;
+
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.share__content {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.share__column {
+  width: 337px;
+  display: flex;
+  flex-direction: column;
+}
+
+.share__item {
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.share__item-img {
+  width: 100%;
+}
+
+.share__text-box {
+  margin-top: 30px;
+}
+
+.share__item-title {
+  margin-bottom: 0;
+
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.share__item-text {
+  margin-bottom: 0;
+  margin-top: 10px;
+
+  font-size: 18px;
+  line-height: 1.44;
+  text-align: left;
+  color: #010101;
+}

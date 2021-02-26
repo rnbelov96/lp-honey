@@ -70,6 +70,7 @@
   margin-right: auto;
   margin-bottom: 0;
   padding: 0;
+  padding-bottom: 46px;
   display: flex;
   background-color: $white;
   overflow: hidden;
@@ -83,12 +84,19 @@
 
 .formats__item {
   width: calc(100% / 3);
+
+  &:last-child .formats__item-content {
+    border-right: none;
+  }
 }
 
 .formats__item-content {
+  position: relative;
+
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 46px;
+
+  border-right: 1px solid #edebe9;
 }
 
 .formats__item-title {

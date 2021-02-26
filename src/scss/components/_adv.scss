@@ -8,6 +8,14 @@
   background-image: url('/src/img/sot-1.png'), url('/src/img/sot-2.png');
   background-position: left 386px, right 159px;
   background-repeat: no-repeat, no-repeat;
+
+  @media (min-width: 1921px) {
+    background-image: none;
+  }
+
+  @media (max-width: 1440px) {
+    background-image: none;
+  }
 }
 
 .adv__title {
@@ -41,6 +49,10 @@
 
 .adv__item {
   width: 237px;
+
+  @media (max-width: 1200px) {
+    width: 40%;
+  }
 }
 
 .adv__icon {
@@ -88,4 +100,12 @@
   position: absolute;
   bottom: 67px;
   right: 300px;
+
+  @media (min-width: 1921px) {
+    display: none;
+  }
+
+  @media (max-width: 1440px) {
+    display: none;
+  }
 }

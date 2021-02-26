@@ -1,0 +1,103 @@
+.review-slider {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 65px;
+  margin-bottom: 56px;
+  padding: 48px 46px 40px 25px;
+  width: 800px;
+
+  background-color: #f3f0ed;
+  border-radius: 10px;
+
+  &::before {
+    position: absolute;
+
+    top: -88px;
+    right: -740px;
+
+    content: url("/src/img/flowers.png");
+  }
+}
+
+.review-slider__wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.review-slider__img-box {
+  display: flex;
+  justify-content: space-between;
+  transform: translate3d(-400%, 0, 0);
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.review-slider__img-item {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img,
+  div {
+    pointer-events: none;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.review-slider__btn-next,
+.review-slider__btn-prev {
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url('/src/img/icons/review-arrow-left.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.review-slider__btn-next {
+  background-image: url('/src/img/icons/review-arrow-right.png');
+}
+
+.review-slider__controls {
+  position: relative;
+  left: -26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.review-slider__nav-box {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.review-slider__nav-item {
+  margin: 0 12px;
+  width: 28px;
+  height: 28px;
+
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.86;
+
+  border: none;
+
+  &_active {
+    background-image: linear-gradient(to top, #b47531, #eca84d);
+    border-radius: 50%;
+  }
+}

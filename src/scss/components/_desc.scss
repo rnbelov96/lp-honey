@@ -5,12 +5,40 @@
 
   @include bg;
   background-image: url("/src/img/bgs/desc-bg.jpg");
+
+  &_feedback {
+    overflow: hidden;
+    padding-top: 118px;
+
+    & .desc__title {
+      position: relative;
+      z-index: 3;
+      
+      margin-top: 0;
+      line-height: 52px;
+
+      span {
+        color: #da9844;
+      }
+    }
+
+    background-image: url("/src/img/bgs/contact-bg.jpg");
+  }
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
 }
 
 .desc__content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
 }
 
 .desc__title {
