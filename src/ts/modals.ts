@@ -16,7 +16,7 @@ const openModal = (modalEl: HTMLDivElement) => {
 };
 
 const modalElList = document.querySelectorAll('.modal');
-const [policyModalEl, formModalEl] = modalElList;
+const [policyModalEl, callFormModalEl, planFormModalEl] = modalElList;
 const modalWrapperElList = document.querySelectorAll('.modal__center-wrapper');
 modalElList.forEach(modalEl => {
   modalEl.addEventListener('click', (e: Event) => {
@@ -44,9 +44,16 @@ policyBtnElList.forEach(el => {
   });
 });
 
-const modalCallBtnElList = document.querySelectorAll('.js-form-modal');
+const modalCallBtnElList = document.querySelectorAll('.js-call-form-modal');
 modalCallBtnElList.forEach(el => {
   el.addEventListener('click', () => {
-    openModal(formModalEl as HTMLDivElement);
+    openModal(callFormModalEl as HTMLDivElement);
+  });
+});
+
+const modalPlanBtnElList = document.querySelectorAll('.js-plan-form-modal');
+modalPlanBtnElList.forEach(el => {
+  el.addEventListener('click', () => {
+    openModal(planFormModalEl as HTMLDivElement);
   });
 });

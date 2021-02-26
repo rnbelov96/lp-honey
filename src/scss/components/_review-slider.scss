@@ -18,6 +18,10 @@
 
     content: url("/src/img/flowers.png");
   }
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
 }
 
 .review-slider__wrapper {

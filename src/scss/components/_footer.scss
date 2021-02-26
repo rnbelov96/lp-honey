@@ -1,5 +1,7 @@
 .footer {
   min-height: 135px;
+
+  background-color: $white;
 }
 
 .footer__wrapper {
@@ -15,6 +17,12 @@
 }
 
 .footer__policy {
+  padding-left: 0;
+  padding-right: 0;
+
+  background-color: transparent;
+  border: none;
+
   font-size: 14px;
   text-align: center;
   color: #bb8751;

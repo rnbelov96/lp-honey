@@ -22,6 +22,11 @@
       }
     }
 
+    & .desc__subtitle {
+      position: relative;
+      z-index: 3;
+    }
+
     background-image: url("/src/img/bgs/contact-bg.jpg");
   }
 

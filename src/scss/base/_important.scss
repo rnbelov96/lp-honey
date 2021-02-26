@@ -1,6 +1,6 @@
 .input-error,
 .input-error:hover {
-  border: solid #ce211f 1px;
+  outline: solid #ce211f 2px;
   & + svg {
     path,
     rect {

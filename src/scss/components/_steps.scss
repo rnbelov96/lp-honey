@@ -36,6 +36,7 @@
   margin-right: auto;
 
   @include bg;
+  background-size: contain;
   background-image: url('/src/img/color-line.png');
 }
 
@@ -44,6 +45,7 @@
   margin-top: 73px;
   margin-bottom: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 
   list-style: none;
@@ -56,6 +58,7 @@
   padding-left: 27px;
   padding-right: 27px;
   padding-bottom: 40px;
+  margin-bottom: 20px;
 
   background-color: $white;
   border-radius: 10px;

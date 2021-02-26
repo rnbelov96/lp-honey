@@ -14,14 +14,26 @@
     & .form__input-list {
       flex-direction: row;
       align-items: center;
+
+      @media (max-width: 991px) {
+        flex-direction: column;
+      }
     }
 
     & .form__input-box {
       width: 24%;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
     }
 
     & .form__input {
       margin-right: 14px;
+
+      @media (max-width: 991px) {
+        margin-right: 0;
+      }
     }
 
     & .form__title,
@@ -38,7 +50,7 @@
     }
   }
 
-  &_desc {
+  &_desc, &_feedback {
     @media (max-width: 1200px) {
       margin-top: 30px;
       margin-right: auto;
@@ -63,7 +75,17 @@
       right: 400px;
 
       content: url('/src/img/hand.png');
+
+      @media (max-width: 991px) {
+        content: ""
+      }
     }
+  }
+
+  &_modal {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -116,6 +138,10 @@
   background-color: #f4f1ed;
   border: none;
 
+  &:focus {
+    outline: 2px solid #bb8751;
+  }
+
   &::-webkit-input-placeholder {
     color: #bb8751;
     font-size: 18px;
@@ -148,11 +174,12 @@
   box-shadow: 0px 3px 0 0 #cc1c3d;
   border-radius: 5px;
   border: none;
-  background-image: linear-gradient(to top, #e8232b, #f87ca5);
+  background-image: linear-gradient(to top, #e8232b, #f87ca5);  
 
-  &:hover {
+  &:hover, &:focus {
     box-shadow: 0px 3px 0 0 #de3958;
     background-image: linear-gradient(to top, #f04a5a, #ff99bb);
+    outline: none;
   }
 
   &:active {
@@ -171,6 +198,12 @@
 }
 
 .form__policy {
-  cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
+  
+  color: #bb8751;
   text-decoration: underline;
+
+  border: none;
+  background-color: transparent;
 }

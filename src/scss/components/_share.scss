@@ -6,6 +6,10 @@
   background-image: url("/src/img/bgs/flowers-bg-1.png"), url("/src/img/bgs/flowers-bg-2.png");
   background-repeat: no-repeat, no-repeat;
   background-position: right top, left bottom;
+
+  @media (min-width: 1921px) {
+    background-image: none;
+  }
 }
 
 .share__title {
@@ -23,7 +27,7 @@
 }
 
 .share__column {
-  width: 337px;
+  width: 30%;
   display: flex;
   flex-direction: column;
 }

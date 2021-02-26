@@ -3,9 +3,8 @@
 @import './base/variables.scss';
 @import './base/mixins.scss';
 @import './base/global.scss';
-// @import './components/header.scss';
-// @import './components/button.scss';
-// @import './components/footer.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
 
 .thanks,
 .error {
@@ -14,7 +13,7 @@
   flex-direction: column;
   &__body {
     @include bg;
-    background-image: url('/src/img/bgs/desc-bg.jpg');
+    background-image: url('/src/img/bgs/stats-bg.jpg');
     background-attachment: fixed;
   }
   &__body,
@@ -50,13 +49,13 @@
     font-size: 30px;
     font-weight: 500;
     text-align: center;
-    color: $black;
+    color: $white;
   }
   &__user-name {
     text-transform: uppercase;
   }
   &__subtitle {
-    color: $black;
+    color: $white;
     margin-top: 40px;
     font-size: 18px;
     text-align: center;
@@ -70,6 +69,34 @@
   &__btn-box {
     display: flex;
     justify-content: center;
+  }
+  &__button {
+    width: 300px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.44;
+    text-align: center;
+    color: $white;
+
+    box-shadow: 0px 3px 0 0 #cc1c3d;
+    border-radius: 5px;
+    border: none;
+    background-image: linear-gradient(to top, #e8232b, #f87ca5);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 3px 0 0 #de3958;
+      background-image: linear-gradient(to top, #f04a5a, #ff99bb);
+      outline: none;
+    }
+
+    &:active {
+      box-shadow: inset 0px 4px 1px 0 rgba(0, 0, 0, 0.23);
+      background-image: linear-gradient(to top, #bd0007, #ed3d4e);
+    }
   }
 }
 

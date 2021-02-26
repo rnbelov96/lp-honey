@@ -13,7 +13,9 @@
           <img src="./img/logo.png" alt="Лого компании" class="header__logo" />
           <div class="header__contact-box">
             <a href="tel:+" class="header__phone">8 (800) 000-00-00</a>
-            <button class="header__phone-call">Заказать звонок</button>
+            <button class="header__phone-call js-call-form-modal" type="button">
+              Заказать звонок
+            </button>
           </div>
         </div>
       </div>
@@ -73,13 +75,13 @@
                   />
                 </label>
               </div>
-              <button class="form__button">Получить бизнес-план</button>
+              <button class="form__button" type="submit">Получить бизнес-план</button>
               <p class="form__policy-text">
                 Нажимая кнопку «Получить бизнес-план», я подтверждаю, что
                 ознакомлен и даю согласие на обработку персональных данных на
                 условиях и для целей, определяемых
-                <span class="form__policy js-policy"
-                  >политикой конфиденциальности</span
+                <button class="form__policy js-policy" type="button"
+                  >политикой конфиденциальности</button
                 >
               </p>
             </form>
@@ -584,14 +586,14 @@
                   class="form__input"
                 />
               </label>
-              <button class="form__button">Получить бизнес-план</button>
+              <button class="form__button" type="submit">Получить бизнес-план</button>
             </div>
             <p class="form__policy-text">
               Нажимая кнопку «Получить бизнес-план», я подтверждаю, что
               ознакомлен и даю согласие на обработку персональных данных на
               условиях и для целей, определяемых
-              <span class="form__policy js-policy"
-                >политикой конфиденциальности</span
+              <button class="form__policy js-policy" type="button"
+                >политикой конфиденциальности</button
               >
             </p>
           </form>
@@ -813,7 +815,7 @@
               </div>
             </div>
             <div class="certificates-slider__btns">
-              <button class="certificates-slider__btn-prev">
+              <button class="certificates-slider__btn-prev" type="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -827,7 +829,7 @@
                   />
                 </svg>
               </button>
-              <button class="certificates-slider__btn-next">
+              <button class="certificates-slider__btn-next" type="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1172,11 +1174,13 @@
               <button
                 class="review-slider__btn-prev"
                 aria-label="Предыдущий слайд"
+                type="button"
               ></button>
               <div class="review-slider__nav-box"></div>
               <button
                 class="review-slider__btn-next"
                 aria-label="Следующий слайд"
+                type="button"
               ></button>
             </div>
           </section>
@@ -1220,14 +1224,14 @@
                   class="form__input"
                 />
               </label>
-              <button class="form__button">Получить бизнес-план</button>
+              <button class="form__button" type="submit">Получить бизнес-план</button>
             </div>
             <p class="form__policy-text">
               Нажимая кнопку «Получить бизнес-план», я подтверждаю, что
               ознакомлен и даю согласие на обработку персональных данных на
               условиях и для целей, определяемых
-              <span class="form__policy js-policy"
-                >политикой конфиденциальности</span
+              <button class="form__policy js-policy" type="button"
+                >политикой конфиденциальности</button
               >
             </p>
           </form>
@@ -1342,14 +1346,14 @@
                   class="form__input"
                 />
               </label>
-              <button class="form__button">Получить бизнес-план</button>
+              <button class="form__button" type="button">Получить бизнес-план</button>
             </div>
             <p class="form__policy-text">
               Нажимая кнопку «Получить бизнес-план», я подтверждаю, что
               ознакомлен и даю согласие на обработку персональных данных на
               условиях и для целей, определяемых
-              <span class="form__policy js-policy"
-                >политикой конфиденциальности</span
+              <button class="form__policy js-policy" type="button"
+                >политикой конфиденциальности</button
               >
             </p>
           </form>
@@ -1365,8 +1369,8 @@
             <div class="formats__stat">
               <p class="formats__stat-text">
                 Инвестиции <br />
-                <span class="formats__stat-number">1 365 800</span
-                ><span class="rouble">a</span>
+                <span class="formats__stat-number">1 365 800<span class="rouble">a</span></span
+                >
               </p>
             </div>
             <div class="formats__stat">
@@ -1407,7 +1411,9 @@
                     >10 тыс.<span class="rouble">a</span></span
                   >
                 </p>
-                <button class="formats__btn">Получить бизнес-план</button>
+                <button class="formats__btn js-plan-form-modal" type="button">
+                  Получить бизнес-план
+                </button>
               </div>
             </li>
             <li class="formats__item">
@@ -1429,7 +1435,9 @@
                     >10 тыс.<span class="rouble">a</span></span
                   >
                 </p>
-                <button class="formats__btn">Получить бизнес-план</button>
+                <button class="formats__btn js-plan-form-modal" type="button">
+                  Получить бизнес-план
+                </button>
               </div>
             </li>
             <li class="formats__item">
@@ -1450,7 +1458,9 @@
                     >10 тыс.<span class="rouble">a</span></span
                   >
                 </p>
-                <button class="formats__btn">Получить бизнес-план</button>
+                <button class="formats__btn js-plan-form-modal" type="button">
+                  Получить бизнес-план
+                </button>
               </div>
             </li>
           </ul>
@@ -1599,14 +1609,14 @@
                   class="form__input"
                 />
               </label>
-              <button class="form__button">Получить бизнес-план</button>
+              <button class="form__button" type="submit">Получить бизнес-план</button>
             </div>
             <p class="form__policy-text">
               Нажимая кнопку «Получить бизнес-план», я подтверждаю, что
               ознакомлен и даю согласие на обработку персональных данных на
               условиях и для целей, определяемых
-              <span class="form__policy js-policy"
-                >политикой конфиденциальности</span
+              <button class="form__policy js-policy" type="button"
+                >политикой конфиденциальности</button
               >
             </p>
           </form>
@@ -1662,13 +1672,13 @@
                   />
                 </label>
               </div>
-              <button class="form__button">Получить анализ и расчёт</button>
+              <button class="form__button" type="submit">Получить анализ и расчёт</button>
               <p class="form__policy-text">
                 Нажимая кнопку «Получить бизнес-план», я подтверждаю, что
                 ознакомлен и даю согласие на обработку персональных данных на
                 условиях и для целей, определяемых
-                <span class="form__policy js-policy"
-                  >политикой конфиденциальности</span
+                <button class="form__policy js-policy" type="button"
+                  >политикой конфиденциальности</button
                 >
               </p>
             </form>
@@ -1681,12 +1691,14 @@
       <div class="container container_footer">
         <div class="footer__wrapper">
           <p class="footer__company">ООО “Башкирский мёд”</p>
-          <span class="footer__policy js-policy"
-            >Политика конфиденциальности</span
+          <button class="footer__policy js-policy" type="button"
+            >Политика конфиденциальности</button
           >
           <div class="footer__contact-box">
             <a href="tel:+" class="footer__phone">8 (800) 000-00-00</a>
-            <button class="footer__phone-call">Заказать звонок</button>
+            <button class="footer__phone-call js-call-form-modal" type="button">
+              Заказать звонок
+            </button>
           </div>
         </div>
       </div>
@@ -1946,102 +1958,102 @@
           data-modal-close=""
           class="modal__close"
           title="Закрыть"
+          type="button"
         ></button>
       </div>
     </div>
     <div class="modal">
       <div class="modal__center-wrapper">
         <form class="form form_modal">
-          <h3 class="form__title">
-            Оставьте заявку и получите подробный бизнес-план
-          </h3>
-          <div class="form__input-box">
-            <input
-              name="name"
-              data-type="name"
-              placeholder="Ваше имя"
-              class="form__input"
-            />
-            <svg
-              class="line-form__input-icon"
-              width="13"
-              height="18"
-              viewBox="0 0 13 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6.49986 8.35851C8.40014 8.35851 9.94076 6.48734 9.94076 4.17912C9.94076 1.87085 9.43495 -0.000320435 6.49986 -0.000320435C3.56477 -0.000320435 3.05887 1.87085 3.05887 4.17912C3.05887 6.48734 4.59949 8.35851 6.49986 8.35851Z"
-                fill="#929292"
+          <h2 class="form__title">Оставьте заявку</h2>
+          <p class="form__text">на бесплатный обратный звонок</p>
+          <div class="form__input-list">
+            <label class="form__input-box">
+              <span for="" class="form__input-label">Ваш телефон</span
+              ><input
+                type="text"
+                data-type="phone"
+                name="phone"
+                placeholder="+7(___)___-__-__"
+                class="form__input"
               />
-              <path
-                d="M0.000847073 14.74C0.000113486 14.5992 -0.000620101 14.7003 0.000847073 14.74V14.74Z"
-                fill="#929292"
+            </label>
+            <label class="form__input-box">
+              <span for="" class="form__input-label">Ваш e-mail</span
+              ><input
+                type="email"
+                data-type="email"
+                name="email"
+                placeholder="mail@mail.ru"
+                class="form__input"
               />
-              <path
-                d="M12.9988 14.8499C13.0011 14.8114 12.9996 14.5826 12.9988 14.8499V14.8499Z"
-                fill="#929292"
-              />
-              <path
-                d="M12.9916 14.5712C12.9279 10.5502 12.4027 9.40448 8.38414 8.67921C8.38414 8.67921 7.81847 9.40003 6.49998 9.40003C5.1815 9.40003 4.61573 8.67921 4.61573 8.67921C0.64099 9.39657 0.0839067 10.5253 0.0106576 14.4406C0.00465122 14.7603 0.00186778 14.7771 0.000793457 14.74C0.00103762 14.8095 0.00133051 14.9381 0.00133051 15.1624C0.00133051 15.1624 0.95806 17.0911 6.49998 17.0911C12.0418 17.0911 12.9986 15.1624 12.9986 15.1624C12.9986 15.0183 12.9987 14.9181 12.9989 14.85C12.9978 14.8729 12.9957 14.8284 12.9916 14.5712Z"
-                fill="#929292"
-              />
-            </svg>
+            </label>
           </div>
-          <div class="form__input-box">
-            <input
-              name="phone"
-              data-type="phone"
-              placeholder="+7(___)___-__-__"
-              class="form__input"
-            />
-            <svg
-              class="line-form__input-icon"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M15.6894 12.7221L13.9156 11.5394L12.3387 10.4884C12.0344 10.2859 11.6254 10.3523 11.4007 10.6406L10.425 11.895C10.2154 12.1672 9.83834 12.2454 9.53777 12.079C8.8757 11.7107 8.09278 11.364 6.3653 9.63428C4.63783 7.90459 4.28885 7.12389 3.92057 6.46181C3.75416 6.16124 3.83238 5.7842 4.10457 5.57464L5.35894 4.5989C5.64729 4.37427 5.7137 3.96529 5.51122 3.66094L4.49245 2.13263L3.27752 0.310216C3.07074 2.26392e-05 2.65679 -0.0931043 2.3371 0.0986184L0.935941 0.939198C0.557277 1.1623 0.278928 1.52255 0.15855 1.94528C-0.224614 3.34228 -0.301865 6.424 4.63699 11.3628C9.57584 16.3017 12.6573 16.2242 14.0543 15.841C14.477 15.7207 14.8373 15.4423 15.0604 15.0636L15.9009 13.6625C16.0927 13.3428 15.9996 12.9289 15.6894 12.7221Z"
-                fill="#929292"
-              />
-            </svg>
-          </div>
-          <div class="form__input-box">
-            <input
-              name="email"
-              type="email"
-              data-type="email"
-              placeholder="Ваш e-mail"
-              class="form__input"
-            />
-            <svg
-              class="line-form__input-icon"
-              width="18"
-              height="14"
-              viewBox="0 0 18 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.375733 1.09472C2.84616 3.1869 7.181 6.86769 8.45506 8.01537C8.6261 8.17027 8.80954 8.24901 8.99998 8.24901C9.19004 8.24901 9.37317 8.171 9.54382 8.01684C10.819 6.86804 15.1538 3.1869 17.6243 1.09472C17.7781 0.96471 17.8015 0.736194 17.677 0.577253C17.3891 0.209975 16.96 -0.000610352 16.5 -0.000610352H1.49999C1.04005 -0.000610352 0.610823 0.209976 0.322999 0.577288C0.198475 0.736194 0.221924 0.96471 0.375733 1.09472Z"
-                fill="#929292"
-              />
-              <path
-                d="M17.7825 2.22852C17.6496 2.16664 17.4932 2.18823 17.3826 2.28273C14.6429 4.60522 11.1464 7.58218 10.0463 8.57348C9.4288 9.13085 8.57187 9.13085 7.95298 8.57275C6.78038 7.51623 2.85384 4.17821 0.617414 2.28269C0.506074 2.18819 0.349348 2.16735 0.217512 2.22848C0.0849726 2.29004 0 2.42262 0 2.56873V11.9994C0 12.8267 0.672715 13.4994 1.50001 13.4994H16.5C17.3273 13.4994 18 12.8267 18 11.9994V2.56873C18 2.42262 17.915 2.28969 17.7825 2.22852Z"
-                fill="#929292"
-              />
-            </svg>
-          </div>
-          <button class="button button_form" type="submit">
+          <button class="form__button" type="submit">
             Получить бизнес-план
           </button>
-          <p class="form__form-text">
-            Я подтверждаю, что ознакомлен, и даю согласие на обработку
-            персональных данных на условиях и для целей, определяемых политикой
-            конфиденциальности
+          <p class="form__policy-text">
+            Нажимая кнопку «Получить бизнес-план», я подтверждаю, что ознакомлен
+            и даю согласие на обработку персональных данных на условиях и для
+            целей, определяемых
+            <button class="form__policy" type="button">политикой конфиденциальности</button>
+          </p>
+          <button
+            data-modal-close=""
+            class="modal__close"
+            title="Закрыть"
+            type="button"
+          ></button>
+        </form>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__center-wrapper">
+        <form class="form form_modal">
+          <h2 class="form__title">Оставьте заявку</h2>
+          <p class="form__text">и получите бизнес-план</p>
+          <div class="form__input-list">
+            <label class="form__input-box">
+              <span class="form__input-label">Ваше имя</span
+              ><input
+                type="text"
+                data-type="name"
+                name="name"
+                placeholder="Иван Иванов"
+                class="form__input"
+              />
+            </label>
+            <label class="form__input-box">
+              <span for="" class="form__input-label">Ваш телефон</span
+              ><input
+                type="text"
+                data-type="phone"
+                name="phone"
+                placeholder="+7(___)___-__-__"
+                class="form__input"
+              />
+            </label>
+            <label class="form__input-box">
+              <span for="" class="form__input-label">Ваш e-mail</span
+              ><input
+                type="email"
+                data-type="email"
+                name="email"
+                placeholder="mail@mail.ru"
+                class="form__input"
+              />
+            </label>
+          </div>
+          <button class="form__button" type="submit">
+            Получить бизнес-план
+          </button>
+          <p class="form__policy-text">
+            Нажимая кнопку «Получить бизнес-план», я подтверждаю, что ознакомлен
+            и даю согласие на обработку персональных данных на условиях и для
+            целей, определяемых
+            <button class="form__policy" type="button"
+              >политикой конфиденциальности</button
+            >
           </p>
           <button
             data-modal-close=""

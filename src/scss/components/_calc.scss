@@ -13,6 +13,10 @@
   font-size: 40px;
   font-weight: 900;
   color: $white;
+
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
 }
 
 .calc__actions-wrapper {
@@ -20,12 +24,18 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .calc__actions-box {
   position: relative;
 
   width: 500px;
+  min-height: 267px;
   padding: 48px 20px 48px 75px;
 
   border-radius: 6px;
@@ -49,6 +59,10 @@
   &:last-child::before {
     content: 'ВЫ';
     left: -34px;
+  }
+
+  @media (max-width: 1200px) {
+    margin-bottom: 15px;
   }
 }
 
@@ -85,6 +99,11 @@
 .calc__input-list {
   width: 500px;
   margin-right: 78px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .calc__input-item {
@@ -194,6 +213,12 @@
   font-size: 18px;
   color: $white;
   line-height: 20px;
+}
+
+.calc__spend-list {
+  @media (max-width: 991px) {
+    margin-top: 30px;
+  }
 }
 
 .calc__spend-number {

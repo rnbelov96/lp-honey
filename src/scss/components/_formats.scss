@@ -7,6 +7,14 @@
     url('/src/img/format-sot-2.png');
   background-position: left bottom, right 204px;
   background-repeat: no-repeat, no-repeat;
+
+  @media (min-width: 1921px) {
+    background-image: none;
+  }
+
+  @media (max-width: 1600px) {
+    background-image: none;
+  }
 }
 
 .formats__title {
@@ -132,9 +140,10 @@
   border: none;
   background-image: linear-gradient(to top, #e8232b, #f87ca5);
 
-  &:hover {
+  &:hover, &:focus {
     box-shadow: 0px 3px 0 0 #de3958;
     background-image: linear-gradient(to top, #f04a5a, #ff99bb);
+    outline: none;
   }
 
   &:active {

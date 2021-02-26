@@ -4,3 +4,4 @@ import './scss/style.scss';
 import './ts/modals';
 import './ts/certificates-slider';
 import './ts/review-slider';
+import './ts/form-validation';

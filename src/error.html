@@ -7,11 +7,20 @@
   </head>
   <body class="thanks__body">
     <section class="thanks">
-      <div class="thanks__header">
+      <header class="header">
         <div class="container">
-          <header></header>
+          <div class="header__content">
+            <p class="header__text">У нас только натуральный мёд</p>
+            <img src="./img/logo.png" alt="Лого компании" class="header__logo" />
+            <div class="header__contact-box">
+              <a href="tel:+" class="header__phone">8 (800) 000-00-00</a>
+              <button class="header__phone-call js-call-form-modal" type="button">
+                Заказать звонок
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </header>
       <div class="thanks__content">
         <div class="container">
           <div class="thanks__content-wrapper">
@@ -21,7 +30,7 @@
               </h1>
               <div class="thanks__btn-box">
                 <a class="thanks__link" href="/">
-                  <button class="button">
+                  <button class="thanks__button">
                   Вернуться на главную
                 </button>
               </a>
@@ -30,7 +39,22 @@
           </div>
         </div>
       </div>
-      <footer></footer>
+      <footer class="footer">
+        <div class="container container_footer">
+          <div class="footer__wrapper">
+            <p class="footer__company">ООО “Башкирский мёд”</p>
+            <button class="footer__policy js-policy" type="button"
+              >Политика конфиденциальности</button
+            >
+            <div class="footer__contact-box">
+              <a href="tel:+" class="footer__phone">8 (800) 000-00-00</a>
+              <button class="footer__phone-call js-call-form-modal" type="button">
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
   </body>
 </html>
