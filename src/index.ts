@@ -5,3 +5,4 @@ import './ts/modals';
 import './ts/certificates-slider';
 import './ts/review-slider';
 import './ts/form-validation';
+import './ts/calc';
