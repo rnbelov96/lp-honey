@@ -9,7 +9,7 @@ module.exports = merge(common, {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000,
+    port: 8080,
     watchContentBase: true,
     progress: true,
     open: true,
@@ -26,6 +26,12 @@ module.exports = merge(common, {
       {
         test: /\.(sass|scss|css)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(png|jpg|gif|webp|svg)$/,
+        use: [
+          'file-loader',
+        ],
       },
     ],
   },

@@ -5,12 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     main: './src/index.ts',
-    thanks: './src/ts/thanks.ts'
+    thanks: './src/ts/thanks.ts',
   },
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: 'js/[name].js',
     publicPath: '',
   },
 
@@ -26,20 +26,11 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(png|jpg|gif|webp|svg)$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
-          },
-          'image-webpack-loader',
-        ],
-      },
-      {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]',
+        },
       },
       {
         test: /\.html$/,
@@ -54,19 +45,19 @@ module.exports = {
       template: path.resolve(__dirname, './src/index.html'),
       filename: 'index.html',
       chunks: ['main'],
-      favicon: './src/img/icons/favicon.ico'
+      favicon: './src/img/icons/favicon.ico',
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/thanks.html'),
       filename: 'thanks.html',
       chunks: ['thanks'],
-      favicon: './src/img/icons/favicon.ico'
+      favicon: './src/img/icons/favicon.ico',
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/error.html'),
       filename: 'error.html',
       chunks: ['thanks'],
-      favicon: './src/img/icons/favicon.ico'
+      favicon: './src/img/icons/favicon.ico',
     }),
   ],
-}
+};
