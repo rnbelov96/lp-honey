@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
+    libs: './src/ts/libs.ts',
     main: './src/index.ts',
     thanks: './src/ts/thanks.ts',
   },
@@ -44,7 +45,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/index.html'),
       filename: 'index.html',
-      chunks: ['main'],
+      chunks: ['main', 'libs'],
       favicon: './src/img/icons/favicon.ico',
     }),
     new HtmlWebpackPlugin({
@@ -52,12 +53,6 @@ module.exports = {
       filename: 'thanks.html',
       chunks: ['thanks'],
       favicon: './src/img/icons/favicon.ico',
-    }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/error.html'),
-      filename: 'error.html',
-      chunks: ['thanks'],
-      favicon: './src/img/icons/favicon.ico',
-    }),
+    })
   ],
 };

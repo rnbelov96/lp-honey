@@ -47,6 +47,13 @@
 
 .formats__stat-number {
   font-size: 30px;
+  min-height: 65px;
+  display: block;
+
+  &_text {
+    line-height: 30px;
+    font-size: 18px;
+  }
 }
 
 .formats__income {
