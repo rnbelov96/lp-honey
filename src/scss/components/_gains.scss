@@ -1,4 +1,4 @@
-.adv {
+.gains {
   position: relative;
 
   min-height: 1052px;
@@ -13,12 +13,16 @@
     background-image: none;
   }
 
+  @media (max-width: 1760px) {
+    background-size: 170px, 295px;
+  }
+
   @media (max-width: 1440px) {
     background-image: none;
   }
 }
 
-.adv__title {
+.gains__title {
   margin-bottom: 0;
 
   font-size: 40px;
@@ -26,7 +30,7 @@
   text-align: center;
 }
 
-.adv__subtitle {
+.gains__subtitle {
   margin-top: 30px;
   margin-bottom: 0;
 
@@ -36,7 +40,7 @@
   text-align: center;
 }
 
-.adv__list {
+.gains__list {
   margin-top: 64px;
   padding: 0;
 
@@ -47,7 +51,7 @@
   list-style: none;
 }
 
-.adv__item {
+.gains__item {
   width: 237px;
 
   @media (max-width: 1200px) {
@@ -55,7 +59,7 @@
   }
 }
 
-.adv__icon {
+.gains__icon {
   width: 122px;
   height: 122px;
 
@@ -63,24 +67,24 @@
   border-radius: 50%;
 
   &_first {
-    background-image: url("/src/img/icons/adv/icon1.png");
+    background-image: url("/src/img/icons/gains/icon1.png");
     background-size: cover;
   }
   &_second {
-    background-image: url("/src/img/icons/adv/icon2.png");
+    background-image: url("/src/img/icons/gains/icon2.png");
     background-size: cover;
   }
   &_third {
-    background-image: url("/src/img/icons/adv/icon3.png");
+    background-image: url("/src/img/icons/gains/icon3.png");
     background-size: cover;
   }
   &_fourth {
-    background-image: url("/src/img/icons/adv/icon4.png");
+    background-image: url("/src/img/icons/gains/icon4.png");
     background-size: cover;
   }
 }
 
-.adv__item-title {
+.gains__item-title {
   margin-bottom: 0;
   margin-top: 34px;
 
@@ -88,13 +92,13 @@
   font-weight: 900;
 }
 
-.adv__item-text {
+.gains__item-text {
   font-size: 18px;
   line-height: 1.44;
   margin-top: 20px;
 }
 
-.adv__bee-img {
+.gains__bee-img {
   margin-bottom: 0;
   
   position: absolute;
